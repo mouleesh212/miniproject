@@ -1,0 +1,88 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  
+  text-align: center;
+  background: #f4f6f9;
+}
+
+/* Login */
+#loginPage {
+  background-image: url("https://images.openai.com/static-rsc-4/uiE-ZaF7jYbDOlGLGocG6kSngrb4BHrS8hH54x7Cj0ykYLLm2u4yD4qEic_4mZDubvbRUWgBdCBgF6hDXHQIEhxg2OCDCjBe18PhkVY4pl4kniPmyTArw6vBOo0FCiHhXuYnDrII24sNeybIRWGqA2VHGd6h8Isq3IqwW28SAoXh094t02QiYLAlE29p7rVU?purpose=inline");
+  margin-top: 0px;
+  height: 700px;
+}
+
+input, select {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover { opacity: 0.8; }
+
+.logout-btn { background: #dc3545; }
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.dashboard div {
+  background: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Table */
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th {
+  background: #343a40;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover { background-color: #f1f1f1; }
+
+/* Action buttons */
+.delete-btn { background: red; color: white; }
+.edit-btn { background: orange; color: white; }
+.issue-btn { background: blue; color: white; }
+.return-btn { background: green; color: white; }
+
+/* Form */
+.form { margin: 20px; }
+
+/* Responsive */
+@media(max-width: 768px){
+  .dashboard { flex-direction: column; }
+  table { font-size: 12px; }
+}
